@@ -12,6 +12,7 @@ public class Tictactoeai {
         while (true) {
             displayBoard();
             
+            // Human player (X)
             playerMove();
             if (checkWin('X')) {
                 displayBoard();
@@ -24,6 +25,7 @@ public class Tictactoeai {
                 break;
             }
             
+            // AI move (O)
             computerAIMove();
             if (checkWin('O')) {
                 displayBoard();
